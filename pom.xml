@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>customer-name</groupId>
-        <artifactId>application-parent</artifactId>
+        <groupId>com.systemkern</groupId>
+        <artifactId>command2web-parent</artifactId>
         <version>0.1</version>
         <relativePath>parent/pom.xml</relativePath>
     </parent>
     <packaging>pom</packaging>
 
-    <artifactId>application-id</artifactId>
+    <artifactId>command2web</artifactId>
 
     <description>
         This pom does the following:
@@ -23,12 +23,12 @@
         <module>integrationtests</module>
         <module>parent</module>
         <module>runtime-cli</module>
-        <module>runtime-gae-standard</module>
+        <module>command-receiver</module>
     </modules>
 
     <properties>
-        <distribution-server>ftp.example.com</distribution-server>
-        <distribution-url>ftp://${distribution-server}/foo/bar/${project.groupId}</distribution-url>
+        <distribution-server>ftp.systemkern.com</distribution-server>
+        <distribution-url>ftp://${distribution-server}/repo/com/systemkern/${project.artifactId}/${project.parent.version}</distribution-url>
     </properties>
 
     <build>

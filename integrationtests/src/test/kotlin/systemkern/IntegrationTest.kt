@@ -19,14 +19,14 @@ import org.springframework.web.context.WebApplicationContext
 @RunWith(SpringRunner::class)
 @ActiveProfiles("integrationtest")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = [CliEntryPoint::class])
-class IntegrationTest {
+internal abstract class IntegrationTest {
 
-    internal val restDocumentation = JUnitRestDocumentation()
+    val restDocumentation = JUnitRestDocumentation()
     @Autowired
-    internal lateinit var objectMapper: ObjectMapper
+    lateinit var objectMapper: ObjectMapper
     @Autowired
-    internal lateinit var context: WebApplicationContext
-    internal lateinit var mockMvc: MockMvc
+    lateinit var context: WebApplicationContext
+    lateinit var mockMvc: MockMvc
     @get:Rule
     val rules = RuleChain
         .outerRule(restDocumentation)

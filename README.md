@@ -1,51 +1,8 @@
-# Launcher #
-Launcher is a template for Web technology based Applications.
-Based on Spring Boot it offers a specialised opinionated view on
-how to modularise, implement and deploy such applications.
+# Command2Web #
+Command2Web is a very simple server which allows for the start of predefined shell
+commands via an HTTP interface.
+It can be used to implement a simple remote access or remote controll scenario
 
-It is to be used and applied on an 'as is' basis with no guarantee of functionality.
-
-[![Build Status](https://travis-ci.org/systemkern/launcher.svg?branch=master)](https://travis-ci.org/systemkern/launcher)
-
-
-## Table of Contents
-
-* [Launcher](#launcher)
-  * [The Idea](#the-idea)
-  * [What is provided by this Template](#what-is-provided-by-this-template)
-* [Application](#application)
-  * [Application Configuration](#application-configuration)
-  * [Logging Configuration](#logging-configuration)
-  * [Assembly and Distribution](#assembly-and-distribution)
-  * [Distribution configuration](#distribution-configuration)
-* [Contribution](#contribution)
-* [License](#license)
-
-
-### The Idea
-Even tough each project is different is different in a business sense,
-there are still a lot of functionalities which overlap even between very
-heterogeneous projects. Launcher aims to identify those overlaps and provide
-dvelopers with a quickstart template.
-
-This application template represents a strong opinionated view on the layout of Kotlin applications.
-The layout is aimed at building a a _modularised monolith_ , which can easily be separated into
-micro services at any point in time.
-
-### What is provided by this Template
-* runtime for local execution including 
-  * application configuration
-  * logging configuration
-* build and distribution configurations
-  * bitbucket pipelines (bitbucket-pipelines.yml)
-  * travis ci (github) .travis.yml
-  * assembly of distributable as zip
-  * via ftp (see ./pom.xml)
-  * cli runtime for windows and linux
-  * google app engine runtime
-* integration testing of the REST api
-* documentation generation with SpringRestDocs through the integratoin tests
-* Template for a customer readme.html
 
 
 # Application #
