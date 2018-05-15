@@ -10,6 +10,6 @@
 command-receiver:
   delay: 500
   commands:
-    - "echo integration-test-command-executed-1"
-    - "echo integration-test-command-executed-2"
+    - "echo response-contains-this-string"
+    - "echo response-contains-the-other-string"
 
