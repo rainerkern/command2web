@@ -12,7 +12,7 @@
     <groupId>com.systemkern</groupId>
     <artifactId>command2web-parent</artifactId>
     <name>Command2Web</name>
-    <version>0.1</version>
+    <version>0.3</version>
 
     <description>
         The Systemkern Parent POM provides a prepackaged opinionated default set of technologies
