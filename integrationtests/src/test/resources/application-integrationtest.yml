@@ -8,8 +8,16 @@
 ##############################################################################
 
 command-receiver:
-  delay: 500
   commands:
-    - "echo response-contains-this-string"
-    - "echo response-contains-the-other-string"
-
+    this-string:
+      script: "echo response-contains-this-string"
+      delay: "PT0.5S" # add a delay of half a second
+    other-string:
+      script: "echo response-contains-the-other-string"
+      delay: "PT0.5S" # add a delay of half a second
+    chain-command:
+      delay: "PT2S" #2 seconds delay between the commandos
+      script:
+        - "echo command-list-1"
+        - "echo command-list-2"
+        - "echo command-list-3"

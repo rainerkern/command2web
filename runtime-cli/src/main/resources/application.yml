@@ -17,11 +17,16 @@ server:
   port: 80
 
 command-receiver:
-  # defines the delay between each command in milliseconds
-  delay: 500
-
-  # the list of commands that will be executed
   commands:
-    - "pwd"
-    - "ls -al"
-
+    # each script needs an identifier to be called via the rest interface
+    command-id:
+      # this is the script that will be executed
+      script: "echo script-1-in-the-list"
+      # add a delay after script execution before returning the results
+      delay: "PT0.25S"
+    chain-command:
+      delay: "PT2S" #2 seconds delay between the commandos
+      script:
+        - "echo script-list-1"
+        - "echo script-list-2"
+        - "echo script-list-3"
