@@ -6,3 +6,10 @@
 # It is activated by the class annotation @ActiveProfiles("integrationtest")
 #
 ##############################################################################
+
+command-receiver:
+  delay: 500
+  commands:
+    - "echo integration-test-command-executed-1"
+    - "echo integration-test-command-executed-2"
+

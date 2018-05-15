@@ -28,7 +28,9 @@
 
     <properties>
         <distribution-server>ftp.systemkern.com</distribution-server>
-        <distribution-url>ftp://${distribution-server}/repo/com/systemkern/${project.artifactId}/${project.parent.version}</distribution-url>
+        <distribution-url>
+            ftp://${distribution-server}/repo/com/systemkern/${project.artifactId}/${project.parent.version}
+        </distribution-url>
     </properties>
 
     <build>

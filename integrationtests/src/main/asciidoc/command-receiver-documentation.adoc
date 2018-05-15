@@ -1,0 +1,27 @@
+= Gruber Messintegration Command Receiver
+Systemkern <office@systemkern.com>
+VERSION, {localdate} {localtime}
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:highlightjs-theme: github
+:toc: left
+:toclevels: 4
+:sectlinks:
+:sectnums:
+
+
+= API Requests
+
+== Execute Command
+Execute command is used to trigger the configured command to be executed.
+The command is configured in the application-$PROFILE.yml configuration file.
+
+=== via GET
+
+operation::execute-command-get[snippets='curl-request,http-request,http-response,response-fields']
+
+
+=== via POST
+
+operation::execute-command-post[snippets='curl-request,http-request,http-response,response-fields']

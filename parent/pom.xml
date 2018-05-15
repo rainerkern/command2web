@@ -35,7 +35,8 @@
 
         <!-- dependency versions-->
         <com.amazonaws.aws-sdk.version>1.11.220</com.amazonaws.aws-sdk.version>
-        <com.fasterxml.jackson.module.jackson-module-kotlin.version>2.9.5</com.fasterxml.jackson.module.jackson-module-kotlin.version>
+        <com.fasterxml.jackson.module.jackson-module-kotlin.version>2.9.5
+        </com.fasterxml.jackson.module.jackson-module-kotlin.version>
         <com.google.guava.version>23.2-jre</com.google.guava.version>
         <com.nhaarman.mockito-kotlin.version>1.5.0</com.nhaarman.mockito-kotlin.version>
         <commons-net.commons-net.version>3.6</commons-net.commons-net.version>
@@ -76,8 +77,8 @@
 
     <dependencyManagement>
         <dependencies>
-        <!-- project internal dependencies
-        -->
+            <!-- project internal dependencies
+            -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>command-receiver</artifactId>
@@ -95,7 +96,7 @@
             </dependency>
 
 
-        <!-- external dependencies -->
+            <!-- external dependencies -->
             <dependency>
                 <groupId>com.amazonaws</groupId>
                 <artifactId>aws-java-sdk-ses</artifactId>

@@ -9,3 +9,14 @@
 #
 ##############################################################################
 
+server:
+  port: 8080
+
+command-receiver:
+  # defines the delay between each command in milliseconds
+  delay: 500
+
+  # the list of commands that will be executed
+  commands:
+    - "pwd"
+    - "ls -al"
