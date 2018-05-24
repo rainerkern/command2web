@@ -7,7 +7,6 @@ import org.springframework.http.MediaType
 import org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document
 import org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get
 import org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.post
-import org.springframework.restdocs.payload.JsonFieldType.ARRAY
 import org.springframework.restdocs.payload.JsonFieldType.STRING
 import org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath
 import org.springframework.restdocs.payload.PayloadDocumentation.responseFields
@@ -25,7 +24,7 @@ internal class CommandReceiverIT : IntegrationTest() {
             .andDo(
                 document("execute-command-post",
                     responseFields(
-                        fieldWithPath("timestamp").description("current server timestamp").type(ARRAY),
+                        fieldWithPath("timestamp").description("current server timestamp").type(STRING),
                         fieldWithPath("output").description("shell output of the script").type(STRING)
                     )
                 ))
@@ -43,7 +42,7 @@ internal class CommandReceiverIT : IntegrationTest() {
             .andDo(
                 document("execute-command-get",
                     responseFields(
-                        fieldWithPath("timestamp").description("current server timestamp").type(ARRAY),
+                        fieldWithPath("timestamp").description("current server timestamp").type(STRING),
                         fieldWithPath("output").description("shell output of the script").type(STRING)
                     )
                 ))
@@ -61,7 +60,7 @@ internal class CommandReceiverIT : IntegrationTest() {
             .andDo(
                 document("execute-command-get",
                     responseFields(
-                        fieldWithPath("timestamp").description("current server timestamp").type(ARRAY),
+                        fieldWithPath("timestamp").description("current server timestamp").type(STRING),
                         fieldWithPath("output").description("shell output of the script").type(STRING)
                     )
                 ))

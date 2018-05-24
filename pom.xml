@@ -19,11 +19,11 @@
     </description>
 
     <modules>
-        <module>default</module>
-        <module>integrationtests</module>
+        <module>command-receiver</module>
+        <module>core</module>
+        <module>integration-tests</module>
         <module>parent</module>
         <module>runtime-cli</module>
-        <module>command-receiver</module>
     </modules>
 
     <properties>

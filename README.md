@@ -4,6 +4,7 @@ commands via an HTTP interface.
 It can be used to implement a simple remote access or remote controll scenario
 
 [![Build Status](https://travis-ci.org/systemkern/command2web.svg?branch=master)](https://travis-ci.org/systemkern/command2web)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8afff67500c4ba4b4434587d4ef4054)](https://www.codacy.com/app/systemkern/command2web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systemkern/command2web&amp;utm_campaign=Badge_Grade)
 
 
 # Application #
@@ -39,26 +40,3 @@ See bitbucket-pipelines.yml for an example
   </servers>
 </settings>
 ```
-
-
-# Contribution #
-First off, thank you for taking the time to contribute! By contributing to this project
-you are putting your work into the public domain (see [unlicense](LICENSE))
-
-When commiting code please make sure that you:
-* Make commits of logical units.
-* Be sure to use the issue key in the commit message.
-* Ensure you have added and run the necessary tests for your changes.
-* Run all the tests to assure nothing else was accidentally broken.
-
-Prior to committing, please want to pull in the latest upstream changes
-also please use rebasing rather than merging.
-Merging creates "merge commits" that pollute the project history.
-
-* Push your changes to the topic branch in your fork of the repository.
-* Initiate a pull request
-
-
-# License #
-
-This code is licensed under the [UNLICENSE](LICENSE)

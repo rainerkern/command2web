@@ -53,7 +53,7 @@ internal class CommandService(
 
 @Configuration
 @ConfigurationProperties(prefix = "command-receiver")
-internal class CommandReceiverConfiguration {
+internal open class CommandReceiverConfiguration {
     var waitForPeriod: Duration = Duration.ofSeconds(20)
     var commands: Map<String, CommandEntity> = mutableMapOf()
 }
