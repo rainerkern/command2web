@@ -14,6 +14,7 @@ import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit4.SpringRunner
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
+
 @RunWith(SpringRunner::class)
 @ActiveProfiles("integration-test")
 @SpringBootTest(webEnvironment = RANDOM_PORT, classes = [CliEntryPoint::class])

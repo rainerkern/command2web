@@ -9,7 +9,7 @@
         <!-- main resources -->
         <fileSet>
             <outputDirectory>.</outputDirectory>
-            <directory>runtime-cli/src/main/resources/</directory>
+            <directory>src/main/resources/</directory>
             <includes>
                 <include>**</include>
             </includes>
@@ -25,9 +25,9 @@
         <!-- main application jar file -->
         <fileSet>
             <outputDirectory>.</outputDirectory>
-            <directory>runtime-cli/${project.build.directory}</directory>
+            <directory>${project.build.directory}</directory>
             <includes>
-                <include>${project.parent.name}-${project.parent.version}.jar</include>
+                <include>${project.name}-${project.version}.jar</include>
             </includes>
         </fileSet>
 
