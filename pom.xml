@@ -10,8 +10,8 @@
     </parent>
 
     <groupId>com.systemkern</groupId>
-    <artifactId>command2web</artifactId>
-    <name>Command2Web</name>
+    <artifactId>kommand2web</artifactId>
+    <name>Kommand2Web</name>
     <version>0.3</version>
     <packaging>jar</packaging>
 
