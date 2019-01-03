@@ -1,5 +1,5 @@
-# Command2Web #
-Command2Web is a very simple server which allows for the start of predefined shell
+# Kommand2Web #
+Kommand2Web is a very simple server which allows for the start of predefined shell
 commands via an HTTP interface.
 It can be used to implement a simple remote access or remote controll scenario
 
