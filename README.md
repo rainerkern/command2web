@@ -3,8 +3,7 @@ Command2Web is a very simple server which allows for the start of predefined she
 commands via an HTTP interface.
 It can be used to implement a simple remote access or remote controll scenario
 
-[![Build Status](https://travis-ci.org/systemkern/command2web.svg?branch=master)](https://travis-ci.org/systemkern/command2web)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8afff67500c4ba4b4434587d4ef4054)](https://www.codacy.com/app/systemkern/command2web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systemkern/command2web&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/systemkern/Kommand2Web.svg?branch=master)](https://travis-ci.org/systemkern/Kommand2Web)
 
 
 # Application #
