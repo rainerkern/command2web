@@ -3,3 +3,13 @@ language: java
 
 # -B batch mode makes Maven less verbose
 script: mvn -B clean verify
+
+deploy:
+  provider: releases
+  api_key:
+    secure: P2pnHespxL+sCkSMcmRynUFQr8NQ1mYNbbCfd/2pxh6Jn2ezYQOmk+gLjjCQGKmTH66G3aEs29IazBzllskZXUk75Mdd74STacp+G7YTGWO61BUWhOKts92K0gy9G4rt063f7sY0SIwEd7LD9vIq2oJR8vvf6oKOtex406l9fsCOEvRVgDvPd546ipPkW9FiVjSYd10W2CvjLsq4FgOp61ogqAon+EKV0mtWCq/t26lvXqQF8LU8jG4ESe09fglvRwi91aUeGfk3oupGupwWsNGRYLz/viLGQkaKLIUQv+CXCfVdofT/xVTKChpbdn/9DhuhRcf9Ss8DxVH8abZ7G07KjSqT+NlQ9vQg6Z7eXY3RqYicc+wl0TNB6b7Bm7fr2/8JmcrfenWZNjGuwp5c1xwnNDYYy9q/hwzz7DzX6OjTlnys2meBfM6SzLYoBpueJFnFUez6cj1ye8CfqL6e1pjA3ZUH6e6r3Sfh42J7h5+45n2LXx22ogRUinZM7uaA5a2nHwvG8dyErbGojvK1NoSS3s8aRwK+Psjqwn9s4pfdEi1NVOI3X1EkGOerYp2BCDvnXixWcsMIy1iHrMPS0dsYbXP3ul2eYoNMyQZOCpzm/CQ681xWVbbKEVxAqQP6YmUsrz7PCLV4blTGWihzurwVis1njAqEIji5Zd2NbkA=
+  file: target/Kommand2Web-${TRAVIS_TAG}.zip
+  skip_cleanup: true
+  on:
+    repo: systemkern/Kommand2Web
+    tags: true
