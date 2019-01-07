@@ -8,7 +8,7 @@ deploy:
   provider: releases
   api_key:
     secure: $GH_API
-  file: target/Kommand2Web-${TRAVIS_TAG}.zip
+  file: target/kommand2web-${TRAVIS_TAG}.zip
   skip_cleanup: true
   on:
     repo: systemkern/kommand2web
