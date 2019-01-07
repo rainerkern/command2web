@@ -1,4 +1,4 @@
-package systemkern.receiver
+package systemkern.util
 
 import org.springframework.boot.context.properties.ConfigurationPropertiesBinding
 import org.springframework.core.convert.converter.Converter

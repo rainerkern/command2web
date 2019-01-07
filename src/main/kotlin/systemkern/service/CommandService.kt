@@ -1,10 +1,8 @@
-package systemkern.receiver
+package systemkern.service
 
 import org.slf4j.LoggerFactory
-import org.springframework.boot.context.properties.ConfigurationProperties
-import org.springframework.context.annotation.Configuration
 import org.springframework.stereotype.Service
-import java.time.Duration
+import systemkern.config.CommandReceiverConfiguration
 import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.annotation.PostConstruct
@@ -48,18 +46,4 @@ internal class CommandService(
         }
         return buff.toString()
     }
-}
-
-
-@Configuration
-@ConfigurationProperties(prefix = "command-receiver")
-internal open class CommandReceiverConfiguration {
-    var waitForPeriod: Duration = Duration.ofSeconds(20)
-    var commands: Map<String, CommandEntity> = mutableMapOf()
-}
-
-
-internal class CommandEntity {
-    var script: List<String> = listOf()
-    var delay: Duration = Duration.ZERO
 }

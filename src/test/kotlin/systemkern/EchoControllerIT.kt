@@ -15,6 +15,7 @@ import org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath
 import org.springframework.restdocs.payload.PayloadDocumentation.responseFields
 import org.springframework.test.context.junit4.SpringRunner
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
+import systemkern.entity.EchoDTO
 import java.time.LocalDateTime
 import javax.money.MonetaryAmount
 
@@ -48,11 +49,3 @@ internal class EchoControllerIT : IntegrationTest() {
     }
 
 }
-
-
-internal data class EchoDTO(
-    val id: Int,
-    val value: String,
-    val timestamp: LocalDateTime? = LocalDateTime.now(),
-    val money: MonetaryAmount = Money.of(0,"EUR")
-)
