@@ -1,9 +1,9 @@
-# Kommand2Web #
-Kommand2Web is a very simple server which allows for the start of predefined shell
+# kommand2web #
+kommand2web is a very simple server which allows for the start of predefined shell
 commands via an HTTP interface.
 It can be used to implement a simple remote access or remote controll scenario
 
-[![Build Status](https://travis-ci.org/systemkern/Kommand2Web.svg?branch=master)](https://travis-ci.org/systemkern/Kommand2Web)
+[![Build Status](https://travis-ci.org/systemkern/kommand2web.svg?branch=master)](https://travis-ci.org/systemkern/kommand2web)
 
 
 # Application #
