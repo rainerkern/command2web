@@ -1,9 +1,9 @@
-package systemkern
+package systemkern.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import java.time.LocalDateTime
+import systemkern.entity.PongDTO
 
 @RestController
 @RequestMapping("/default/ping")
@@ -13,10 +13,4 @@ internal class PingController {
     fun ping(): PongDTO {
         return PongDTO()
     }
-
 }
-
-internal data class PongDTO(
-    val timestamp: LocalDateTime = LocalDateTime.now()
-)
-

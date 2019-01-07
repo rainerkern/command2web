@@ -1,8 +1,9 @@
-package systemkern.receiver
+package systemkern.controller
 
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.*
-import java.time.LocalDateTime
+import systemkern.entity.ReturnDTO
+import systemkern.service.CommandService
 
 @RestController
 @RequestMapping("/execute-command")
@@ -23,10 +24,3 @@ internal class CommandReceiverController(
             output = service.runCommand(id)
         )
 }
-
-
-internal data class ReturnDTO(
-    val timestamp: LocalDateTime = LocalDateTime.now(),
-    val output: String
-)
-
