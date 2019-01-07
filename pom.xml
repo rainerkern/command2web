@@ -11,7 +11,7 @@
 
     <groupId>com.systemkern</groupId>
     <artifactId>kommand2web</artifactId>
-    <name>Kommand2Web</name>
+    <name>kommand2web</name>
     <version>0.3</version>
     <packaging>jar</packaging>
 
