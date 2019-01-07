@@ -11,5 +11,5 @@ deploy:
   file: target/Kommand2Web-${TRAVIS_TAG}.zip
   skip_cleanup: true
   on:
-    repo: systemkern/Kommand2Web
+    repo: systemkern/kommand2web
     tags: true
