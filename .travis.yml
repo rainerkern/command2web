@@ -3,3 +3,13 @@ language: java
 
 # -B batch mode makes Maven less verbose
 script: mvn -B clean verify
+
+deploy:
+  provider: releases
+  api_key:
+    secure: $GH_API
+  file: target/kommand2web-${TRAVIS_TAG}.zip
+  skip_cleanup: true
+  on:
+    repo: systemkern/kommand2web
+    tags: true
